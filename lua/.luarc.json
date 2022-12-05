@@ -1,0 +1,9 @@
+{
+	"description": "Setting of Neovim configuration",
+	"diagnostics.disable": [
+		"undefined-global",
+		"lowercase-global",
+		"codestyle-check",
+		"spell-check"
+	]
+}
