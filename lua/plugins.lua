@@ -41,7 +41,7 @@ local function init_packer()
 		-- Tree-sitter: incremental parsing of buffers
 		use {
 			"nvim-treesitter/nvim-treesitter",
-			branch = "v0.8.0",
+			branch = "v0.8.1",
 			run = ":TSUpdate",
 			config = get_config("treesitter")
 		}
