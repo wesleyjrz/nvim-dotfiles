@@ -237,7 +237,7 @@ local function init_packer()
 		-- Nord: a superb theme
 		use {
 			"shaunsingh/nord.nvim",
-			commit = "78f5f00",
+			commit = "8bbb859",
 			config = get_config("nord")
 		}
 
