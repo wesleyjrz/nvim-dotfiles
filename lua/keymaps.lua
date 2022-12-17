@@ -19,6 +19,7 @@ local normal_insert = { "n", "i" }
 
 -- Set <Space> as the leader key
 vim.g.mapleader = " "
+key({ "n", "v" }, "<Space>", "<Nop>", silent)
 
 -- Emacs-like cancel key
 key(normal_insert, "<C-g>", "<Esc>", noremap)
