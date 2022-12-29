@@ -151,7 +151,7 @@ key("n", "<A-n>", "<cmd>BufferNext<CR>", silent)
 key("n", "<A-p>", "<cmd>BufferPrevious<CR>", silent)
 
 -- Magick buffer-picking
-key("n", "<A-f>", "<cmd>BufferPick<CR>", silent)
+key("n", "<A-b>", "<cmd>BufferPick<CR>", silent)
 
 -- Move tabs
 key("n", "<A-S-n>", "<cmd>BufferMoveNext<CR>", silent)
