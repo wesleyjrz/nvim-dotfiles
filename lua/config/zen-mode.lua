@@ -14,6 +14,9 @@ zen.setup {
 
 
 	on_open = function()
+		-- Set dimmed area to be transparent
+		vim.api.nvim_set_hl(0, "ZenBg", { ctermbg = 0 })
+
 		-- Enable inline diagnostics
 		vim.diagnostic.config({ virtual_text = true })
 	end,
