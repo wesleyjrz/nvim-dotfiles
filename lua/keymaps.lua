@@ -262,7 +262,7 @@ key("n", "cv", "<cmd>lua vim.lsp.buf.rename()<CR>", noremap)
 --]]
 
 -- Run snippet
-key("v", "<Leader>R", "<cmd>SnipRun<CR>", silent)
+keys("v", { "<Leader>R", "<F5>" }, "<cmd>SnipRun<CR>", silent)
 
 -- Run file
 key("n", "<Leader>R",
