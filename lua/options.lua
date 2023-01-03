@@ -62,6 +62,7 @@ o.clipboard:append("unnamedplus") -- allow nvim to access system clipboard (depe
 o.autochdir = true                -- always change the current directory to the file parent directory
 o.history = 1000                  -- save command history
 o.mouse = "nv"                    -- enable mouse support on selected modes
+o.exrc = true                     -- local config files support
 
 -- Hide warnings
 o.hidden = true         -- do not ask to save when switching buffers
