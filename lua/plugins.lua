@@ -59,6 +59,22 @@ local function init_packer()
 			commit = "c55d1de"
 		}
 
+		-- exrc: local config file with confirmation
+		use {
+			"MunifTanjim/exrc.nvim",
+			commit = "7e6a93d",
+			config = function()
+				require("exrc").setup({
+					files = {
+						".nvimrc",
+						".nvimrc.lua",
+						".exrc",
+						".exrc.lua"
+					},
+				})
+			end
+		}
+
 		-- Autopair: close pairs automatically
 		use {
 			"windwp/nvim-autopairs",
