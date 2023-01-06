@@ -112,6 +112,14 @@ au("FileType vimwiki", {
 })
 
 --[[
+	VimWiki Diary template
+--]]
+au("BufNewFile ~/Documents/journal/*.md", {
+	command = [[ silent! 0read !$XDG_BIN_HOME/make-diary ]],
+	group = automation
+})
+
+--[[
 	Remove all trailing whitespaces and trim blank lines at the end of file
 --]]
 au("BufWritePre", {
