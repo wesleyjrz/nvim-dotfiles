@@ -11,46 +11,6 @@
 --]]
 
 local ab = vim.abbrev.set
-local luasnip = require "luasnip"
-local snip = luasnip.snippet
---[[
-local node = luasnip.snippet_node
-local indent = luasnip.indent_snippet_node
---]]
-local txt = luasnip.text_node
-local ins = luasnip.insert_node
---[[
-local ft = luasnip.function_node
-local ch = luasnip.choice_node
-local dym = luasnip.dynamic_node
-local rst = luasnip.restore_node
-local events = require "luasnip.util.events"
-local ai = require "luasnip.nodes.absolute_indexer"
-local fmt = require("luasnip.extras.fmt").fmt
-local m = require("luasnip.extras").m
-local lambda = require("luasnip.extras").l
-local postfix = require("luasnip.extras.postfix").postfix
---]]
-
---[[
-	LuaSnip snippets
---]]
-
-luasnip.add_snippets("vimwiki", {
-	-- Header for notes
-	snip("noteheader", {
-		txt("# Title: "), ins(1),
-		txt({"", "### Date: "}), ins(2),
-		txt({"", "### Author: "}), ins(3)
-	}),
-
-	-- Header for VimWiki diary files
-	snip("diaryheader", {
-		txt({"# <date>"}), ins(1),
-		txt({"", "**Author:** "}), ins(2),
-		txt({"", "**Tags:** "}), ins(2)
-	}),
-})
 
 --[[
 	Abbreviations
