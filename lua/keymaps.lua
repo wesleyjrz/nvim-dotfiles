@@ -269,6 +269,9 @@ keys("n", { "<Leader>rr", "<F5>" },
 	"<cmd>mkview<CR><cmd>%SnipRun<CR><cmd>loadview<CR>",
 silent)
 
+-- Close SnipRun window
+key("n", "<Leader>rc", "<cmd>SnipClose<CR>", silent)
+
 --[[
 	Telescope
 --]]
