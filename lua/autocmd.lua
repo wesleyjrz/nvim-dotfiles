@@ -114,7 +114,10 @@ au("FileType vimwiki", {
 --[[
 	VimWiki Diary template
 --]]
-au("BufNewFile ~/Documents/journal/*.md", {
+au("BufNewFile", {
+	-- NOTE: vim.api.nvim_create_autocmd() doesn't support relative paths in
+	-- pattern for some reason.
+	pattern = "/home/wesleyjrz/Documents/journal/*.md",
 	command = [[ silent! 0read !$XDG_BIN_HOME/make-diary ]],
 	group = automation
 })
